@@ -1,20 +1,20 @@
 pipeline { 
-agent any 
+agent any
 stages { 
 stage('Build') { 
 steps { 
-echo "Building application from MAIN branch" 
+echo "Building login feature" 
 } 
 } 
 stage('Test') { 
-steps {
-echo "Running tests on MAIN branch" 
+steps { 
+echo "Running login feature tests" 
 } 
 } 
 stage('Deploy') { 
 steps { 
-echo "Deploying to production" 
+echo "Deploying login test build" 
 } 
 } 
 } 
-}
+} 
